@@ -22,13 +22,27 @@ html {
 }
 body {
     margin: auto;
-    /* box-sizing: border-box; */
 }
 /* end generics */
 
 /* header */
 .headline {
     text-align: center;
+}
+.headline h1 {
+    font-weight: 200;
+    color: var(--greyish-blue);
+    margin-top: 80px;
+    font-size: 28px;
+}
+.headline h2 {
+    color: var(--very-dark-blue);
+    font-size: 28px;
+}
+.headline p {
+    color: var(--greyish-blue);
+    width: 32ch;
+    margin: 10px;
 }
 
 .container {
@@ -44,17 +58,19 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     gap: 20px;
+    color: var(--very-dark-blue);
 }
 .card {
     border-radius: 10px;
     width: 300px;
-    box-shadow: 1px 6px 18px var(--greyish-blue);
+    height: 200px;
+    box-shadow: 0 8px 28px var(--greyish-blue);
     margin: 10px;
-    padding: 10px;
+    padding: 12px;
 }
 .icon {
     margin-left: 220px;
-    padding-top: 10px;
+    padding-top: 35px;
 }
 /* cards */
 .super {
@@ -78,4 +94,10 @@ body {
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 800px) {
+    .headline p {
+        width: 55ch;
+    }
 }
